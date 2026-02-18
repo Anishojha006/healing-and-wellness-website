@@ -4,7 +4,153 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   width: 100%;
   height: 100%;
+}
+
+.button {
+  padding: 0.8rem;
+  border-radius: 1.5rem;
+  margin-right: 1rem;
+  border: none;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+main nav {
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem;
+  background-color: #f9f6f0;
+}
+main nav .hamburger {
+  height: clamp(24px, 6vw, 100px);
+}
+main section.part1 {
+  height: min-content;
+  width: 100%;
+  border: 0.1px solid #ccc4c4;
+  border-radius: 0.9375rem;
+  padding-left: 1rem;
+}
+main section.part1 .textandbtn h3 {
+  width: clamp(100px, 60vw, 100%);
+  margin: 2rem 2rem 2rem 0rem;
+  font-size: clamp(30px, 8vw, 50px);
+  font-weight: 200;
+}
+main section.part1 .textandbtn .proposal-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+  background-color: #772d08;
+  border-radius: 5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+main section.part1 .textandbtn .proposal-btn:hover {
+  background-color: rgb(142.8937007874, 54.0354330709, 9.6062992126);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+main section.part1 .textandbtn .proposal-btn .icon-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.part1 .textandbtn .proposal-btn .icon-circle .arrow-icon {
+  width: 20px;
+  height: 20px;
+  fill: #772d08;
+}
+main section.part1 .textandbtn .proposal-btn .btn-text {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+main section.part1 .textandbtn p {
+  padding-top: 1rem;
+}
+main section.part1 .textandbtn .btn {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+main section.part1 .textandbtn button:nth-child(1) {
+  background-color: #fae6be;
+}
+main section.part1 .textandbtn button:nth-child(2) {
+  background-color: #ffe8f8;
+}
+main section.part1 .textandbtn button:nth-child(3) {
+  background-color: #d7e5ff;
+}
+main section.part1 .image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: inherit;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+main section.part1 .image-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 64.8% 50%;
+  transition: opacity 0.3s ease-in-out;
+}
+main section.part1 .image-wrapper .rating-card {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 0.625rem;
+  margin: 0.52rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+main section.part1 .image-wrapper .rating-card .stars {
+  display: flex;
+  gap: 4px;
+}
+main section.part1 .image-wrapper .rating-card .stars .star {
+  width: 20px;
+  height: 20px;
+  fill: #e0e0e0;
+}
+main section.part1 .image-wrapper .rating-card .stars .star.fill {
+  fill: #772D08;
+}
+main section.part1 .image-wrapper .rating-card .stars .star.half {
+  fill: #772D08;
+}
+main section.part1 .image-wrapper .rating-card .rating-info .rating-value {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #260e01;
+  line-height: 1.2;
+}
+main section.part1 .image-wrapper .rating-card .rating-info .rating-label {
+  margin: 4px 0 0 0;
+  font-size: 0.9rem;
+  color: #311B0E;
 }/*# sourceMappingURL=style.css.map */
