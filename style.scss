@@ -3,20 +3,37 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body,
 html {
   width: 100%;
   height: 100%;
 }
+
+$colors: (
+  "accent": rgb(119, 45, 8),
+  // The Brownish-Orange
+  "text": rgb(38, 14, 1),
+  // The Dark Brown
+  "divider": rgba(38, 14, 1, 0.2),
+);
+$brand-brown: #772d08; // rgb(119, 45, 8)
+$text-dark: #260e01; // rgb(38, 14, 1)
+$divider-color: rgba(38, 14, 1, 0.2);
+$font-main: "Satoshi", sans-serif;
+
 @import "button";
+
 @mixin flex($flexdirection: row, $gap: 0rem) {
   display: flex;
   flex-direction: $flexdirection;
   gap: $gap;
 }
+
 main {
   width: 100%;
   height: 100%;
+
   nav {
     @include flex(row, 0rem);
     align-items: center;
@@ -28,19 +45,23 @@ main {
       height: clamp(24px, 6vw, 100px);
     }
   }
+
   section.part1 {
     height: min-content;
     width: 100%;
-    border: 0.1px solid #ccc4c4;
+    border: 0.1px solid #f4ecec;
     border-radius: 0.9375rem;
     padding-left: 1rem;
+
     .textandbtn {
       h3 {
-        width: clamp(100px, 60vw, 100%);
+        width: clamp(200px, 80vw, 100%);
         margin: 2rem 2rem 2rem 0rem;
-        font-size: clamp(30px, 8vw, 50px);
+        font-size: clamp(40px, 10vw, 50px);
         font-weight: 200;
+        font-family: sans-serif;
       }
+
       // Variables
       $brand-brown: #772d08;
       $white: #ffffff;
@@ -85,24 +106,30 @@ main {
           font-size: 1rem;
         }
       }
+
       p {
         padding-top: 1rem;
       }
+
       .btn {
         margin-top: 1rem;
         @include flex(row, 0.6rem);
         flex-wrap: wrap;
       }
+
       button:nth-child(1) {
         background-color: #fae6be;
       }
+
       button:nth-child(2) {
         background-color: #ffe8f8;
       }
+
       button:nth-child(3) {
         background-color: #d7e5ff;
       }
     }
+
     .image-wrapper {
       position: relative;
       overflow: hidden;
@@ -113,63 +140,207 @@ main {
       img {
         display: block;
         width: 100%;
-        height: 100%;
+        height: 22rem;
         object-fit: cover;
         object-position: 64.8% 50%;
         transition: opacity 0.3s ease-in-out;
       }
+
       // Variables
-$star-color: #772D08; // Classic gold/yellow for stars
-$text-main: #260e01; // The dark brown from your token
-$text-muted: #311B0E;
+      $star-color: #772d08; // Classic gold/yellow for stars
+      $text-main: #260e01; // The dark brown from your token
+      $text-muted: #311b0e;
 
-.rating-card {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: white;
-    border-radius: 0.625rem;
-    margin: 0.52rem;
-  display: flex;
-  flex-direction: column; // Stack stars above text
-  gap: 0.75rem;
-  padding: 1rem;
+      .rating-card {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+        border-radius: 0.625rem;
+        margin: 0.52rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 1rem;
 
-  .stars {
-    display: flex;
-    gap: 4px; // Small space between stars
+        .stars {
+          display: flex;
+          gap: 4px;
 
-    .star {
-      width: 20px;
-      height: 20px;
-      fill: #e0e0e0; // Default empty star color
+          .star {
+            width: 20px;
+            height: 20px;
+            fill: #e0e0e0;
 
-      &.fill {
-        fill: $star-color;
-      }
+            &.fill {
+              fill: $star-color;
+            }
 
-      &.half {
-        fill: $star-color;
+            &.half {
+              fill: $star-color;
+            }
+          }
+        }
+
+        .rating-info {
+          .rating-value {
+            margin: 0;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: $text-main;
+            line-height: 1.2;
+          }
+
+          .rating-label {
+            margin: 4px 0 0 0;
+            font-size: 0.9rem;
+            color: $text-muted;
+          }
+        }
       }
     }
   }
 
-  .rating-info {
-    .rating-value {
-      margin: 0;
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: $text-main;
-      line-height: 1.2;
+  section.part2 {
+    margin-top: 2rem;
+    background-color: #f9f6f0;
+    padding: 80px 20px 50px;
+
+    .health-tagline {
+      text-align: center;
+      margin-bottom: 2rem;
     }
 
-    .rating-label {
-      margin: 4px 0 0 0;
-      font-size: 0.9rem;
-      color: $text-muted;
+    h1 {
+      font-weight: 400;
+      font-weight: 400;
+      text-align: center;
+      text-wrap: balance;
+      font-family: Satoshi, "Satoshi Placeholder", sans-serif;
+      font-style: normal;
+      line-height: 1.4em;
+      font-size: 1.625rem;
+
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    .video {
+      width: 100%;
+
+      video {
+        width: 100%;
+        border-radius: 7.25rem;
+      }
+    }
+
+    .stats-container {
+      @include flex(row, 1rem);
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding-top: 2rem;
+
+      .stat-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        min-width: 150px;
+        max-width: 250px;
+        text-align: center;
+
+        .stat-number {
+          font-family: $font-main;
+          font-size: 1.875rem; // 30px
+          font-weight: 700;
+          color: $brand-brown;
+          display: flex;
+          align-items: center;
+          gap: 2px;
+
+          .symbol {
+            font-weight: 400;
+          }
+        }
+
+        .stat-divider {
+          width:100%;
+          height: 1px;
+          background-color: $divider-color;
+          margin: 12px 0;
+        }
+
+        .stat-label {
+          font-family: $font-main;
+          font-size: 1rem;
+          font-weight: 400;
+          color: $text-dark;
+          opacity: 0.6;
+          margin: 0;
+          line-height: 1.4;
+        }
+      }
+    }
+
+
+  }
+
+  section.part3{
+    padding: 50px 20px 80px;
+    background-color: #F9F6F0;
+    .services-text{
+      color: rgb(119, 45, 8);
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    .wellness-heading{
+      font-weight: 200;
+    }
+    .services{
+      
+      padding: 1rem;
+      margin-top: 1rem;
+      @include flex(column,1rem);
+      .serviceSection{ 
+        padding: 1rem;
+    background-color: white;
+
+      border-radius: 2rem;
+
+      .img{
+        >img{
+          width: 15%;
+        }
+      }
+      h4{
+        font-weight: 100;
+        font-family:sans-serif;
+      }
+      p{
+            letter-spacing: 0.6px;
+            line-height: 1.5rem;
+            color: gray;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+      }
+      .img2{
+        >img{
+          width: 100%;
+          border-radius: 2rem;
+        }
+      }
+      }
     }
   }
 }
-    }
+
+@media (max-width: 600px) {
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
   }
 }

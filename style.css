@@ -36,15 +36,16 @@ main nav .hamburger {
 main section.part1 {
   height: min-content;
   width: 100%;
-  border: 0.1px solid #ccc4c4;
+  border: 0.1px solid #f4ecec;
   border-radius: 0.9375rem;
   padding-left: 1rem;
 }
 main section.part1 .textandbtn h3 {
-  width: clamp(100px, 60vw, 100%);
+  width: clamp(200px, 80vw, 100%);
   margin: 2rem 2rem 2rem 0rem;
-  font-size: clamp(30px, 8vw, 50px);
+  font-size: clamp(40px, 10vw, 50px);
   font-weight: 200;
+  font-family: sans-serif;
 }
 main section.part1 .textandbtn .proposal-btn {
   display: inline-flex;
@@ -110,7 +111,7 @@ main section.part1 .image-wrapper {
 main section.part1 .image-wrapper img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 22rem;
   object-fit: cover;
   object-position: 64.8% 50%;
   transition: opacity 0.3s ease-in-out;
@@ -137,10 +138,10 @@ main section.part1 .image-wrapper .rating-card .stars .star {
   fill: #e0e0e0;
 }
 main section.part1 .image-wrapper .rating-card .stars .star.fill {
-  fill: #772D08;
+  fill: #772d08;
 }
 main section.part1 .image-wrapper .rating-card .stars .star.half {
-  fill: #772D08;
+  fill: #772d08;
 }
 main section.part1 .image-wrapper .rating-card .rating-info .rating-value {
   margin: 0;
@@ -152,5 +153,130 @@ main section.part1 .image-wrapper .rating-card .rating-info .rating-value {
 main section.part1 .image-wrapper .rating-card .rating-info .rating-label {
   margin: 4px 0 0 0;
   font-size: 0.9rem;
-  color: #311B0E;
+  color: #311b0e;
+}
+main section.part2 {
+  margin-top: 2rem;
+  background-color: #f9f6f0;
+  padding: 80px 20px 50px;
+}
+main section.part2 .health-tagline {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+main section.part2 h1 {
+  font-weight: 400;
+  font-weight: 400;
+  text-align: center;
+  text-wrap: balance;
+  font-family: Satoshi, "Satoshi Placeholder", sans-serif;
+  font-style: normal;
+  line-height: 1.4em;
+  font-size: 1.625rem;
+}
+main section.part2 h1 span {
+  display: inline-block;
+  vertical-align: middle;
+}
+main section.part2 .video {
+  width: 100%;
+}
+main section.part2 .video video {
+  width: 100%;
+  border-radius: 7.25rem;
+}
+main section.part2 .stats-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+main section.part2 .stats-container .stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 150px;
+  max-width: 250px;
+  text-align: center;
+}
+main section.part2 .stats-container .stat-item .stat-number {
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #772d08;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+main section.part2 .stats-container .stat-item .stat-number .symbol {
+  font-weight: 400;
+}
+main section.part2 .stats-container .stat-item .stat-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(38, 14, 1, 0.2);
+  margin: 12px 0;
+}
+main section.part2 .stats-container .stat-item .stat-label {
+  font-family: "Satoshi", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #260e01;
+  opacity: 0.6;
+  margin: 0;
+  line-height: 1.4;
+}
+main section.part3 {
+  padding: 50px 20px 80px;
+  background-color: #F9F6F0;
+}
+main section.part3 .services-text {
+  color: rgb(119, 45, 8);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+main section.part3 .wellness-heading {
+  font-weight: 200;
+}
+main section.part3 .services {
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.part3 .services .serviceSection {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 2rem;
+}
+main section.part3 .services .serviceSection .img > img {
+  width: 15%;
+}
+main section.part3 .services .serviceSection h4 {
+  font-weight: 100;
+  font-family: sans-serif;
+}
+main section.part3 .services .serviceSection p {
+  letter-spacing: 0.6px;
+  line-height: 1.5rem;
+  color: gray;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+main section.part3 .services .serviceSection .img2 > img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+@media (max-width: 600px) {
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
 }/*# sourceMappingURL=style.css.map */
