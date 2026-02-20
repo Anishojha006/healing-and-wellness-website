@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Satoshi, "Satoshi Placeholder", sans-serif;
 }
 
 body,
@@ -267,7 +268,7 @@ main {
         }
 
         .stat-divider {
-          width:100%;
+          width: 100%;
           height: 1px;
           background-color: $divider-color;
           margin: 12px 0;
@@ -284,54 +285,106 @@ main {
         }
       }
     }
-
-
   }
 
-  section.part3{
+  section.part3 {
     padding: 50px 20px 80px;
-    background-color: #F9F6F0;
-    .services-text{
+    background-color: #f9f6f0;
+
+    .services-text {
       color: rgb(119, 45, 8);
       font-weight: 800;
       margin-bottom: 1rem;
     }
-    .wellness-heading{
+
+    .wellness-heading {
       font-weight: 200;
     }
-    .services{
-      
+
+    .services {
       padding: 1rem;
       margin-top: 1rem;
-      @include flex(column,1rem);
-      .serviceSection{ 
+      @include flex(column, 1rem);
+
+      .serviceSection {
         padding: 1rem;
-    background-color: white;
+        background-color: white;
 
-      border-radius: 2rem;
+        border-radius: 2rem;
 
-      .img{
-        >img{
-          width: 15%;
+        .img {
+          > img {
+            width: 15%;
+          }
+        }
+
+        h4 {
+          font-weight: 100;
+          font-family: sans-serif;
+        }
+
+        p {
+          letter-spacing: 0.6px;
+          line-height: 1.5rem;
+          color: gray;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+
+        .img2 {
+          > img {
+            width: 100%;
+            border-radius: 0.5rem;
+          }
         }
       }
-      h4{
+    }
+  }
+
+  section.part4 {
+    padding: 80px 20px 50px;
+
+    .img {
+      border-radius: 0.6rem;
+      max-height: 450px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    .text {
+      margin-top: 1rem;
+
+      p {
+        color: #772d08;
+      }
+
+      h2 {
+        font-size: 1.8rem;
         font-weight: 100;
-        font-family:sans-serif;
+        line-height: 1.2;
+        margin-top: 0.8rem;
+        width: 84vw;
       }
-      p{
-            letter-spacing: 0.6px;
-            line-height: 1.5rem;
-            color: gray;
+      .cards {
+        @include flex(row,0.5rem);
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        .card {
+          width:170px;
+          h4{
+            font-weight: 100;
+          }
+          p{
+            color: rgba(79, 78, 78, 0.796);
             margin-top: 1rem;
-            margin-bottom: 1rem;
-      }
-      .img2{
-        >img{
-          width: 100%;
-          border-radius: 2rem;
+            line-height: 1.8;
+          }
         }
-      }
       }
     }
   }

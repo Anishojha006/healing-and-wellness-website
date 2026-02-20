@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Satoshi, "Satoshi Placeholder", sans-serif;
 }
 
 body,
@@ -232,7 +233,7 @@ main section.part2 .stats-container .stat-item .stat-label {
 }
 main section.part3 {
   padding: 50px 20px 80px;
-  background-color: #F9F6F0;
+  background-color: #f9f6f0;
 }
 main section.part3 .services-text {
   color: rgb(119, 45, 8);
@@ -270,7 +271,51 @@ main section.part3 .services .serviceSection p {
 }
 main section.part3 .services .serviceSection .img2 > img {
   width: 100%;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
+}
+main section.part4 {
+  padding: 80px 20px 50px;
+}
+main section.part4 .img {
+  border-radius: 0.6rem;
+  max-height: 450px;
+  overflow: hidden;
+}
+main section.part4 .img img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+main section.part4 .text {
+  margin-top: 1rem;
+}
+main section.part4 .text p {
+  color: #772d08;
+}
+main section.part4 .text h2 {
+  font-size: 1.8rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-top: 0.8rem;
+  width: 84vw;
+}
+main section.part4 .text .cards {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+main section.part4 .text .cards .card {
+  width: 170px;
+}
+main section.part4 .text .cards .card h4 {
+  font-weight: 100;
+}
+main section.part4 .text .cards .card p {
+  color: rgba(79, 78, 78, 0.796);
+  margin-top: 1rem;
+  line-height: 1.8;
 }
 
 @media (max-width: 600px) {
