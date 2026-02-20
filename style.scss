@@ -13,9 +13,7 @@ html {
 
 $colors: (
   "accent": rgb(119, 45, 8),
-  // The Brownish-Orange
   "text": rgb(38, 14, 1),
-  // The Dark Brown
   "divider": rgba(38, 14, 1, 0.2),
 );
 $brand-brown: #772d08; // rgb(119, 45, 8)
@@ -372,7 +370,7 @@ main {
       }
       .cards {
         @include flex(row,0.5rem);
-        margin-top: 1rem;
+        margin-top: 2rem;
         flex-wrap: wrap;
         .card {
           width:170px;
@@ -387,6 +385,51 @@ main {
         }
       }
     }
+  }
+
+  section.part5{
+  padding: 0.56rem 1.25rem 3.13rem;
+  background-color: #F9F6F0;
+  .text{
+    @include flex(column,0.6rem);
+  p{
+    color:#772d08;
+    font-size: 1.2rem;
+  }
+  h2{
+   font-weight: 100;
+   font-size: 1.8rem;
+  }
+  button{
+    padding: 11px;
+    border-radius: 19px;
+    border: none;
+    background-color: #772d08;
+    width: fit-content;
+    color: white;
+  }
+  }
+  .img{
+    img{
+      margin-top: 2rem;
+      width: 100%;
+      height:clamp(500px,70vh,600px);
+      border-radius: 20rem;
+      object-position: center center;
+    object-fit: cover;
+    }
+  }
+  .text-2{
+    padding: 0.56rem 1.25rem 3.13rem;
+    p{
+      line-height: 1.5;
+      color: gray;
+      margin-bottom: 2rem;
+    }
+    ul{
+      @include flex(column,1rem)
+    }
+  }
   }
 }
 

@@ -303,7 +303,7 @@ main section.part4 .text .cards {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   flex-wrap: wrap;
 }
 main section.part4 .text .cards .card {
@@ -316,6 +316,52 @@ main section.part4 .text .cards .card p {
   color: rgba(79, 78, 78, 0.796);
   margin-top: 1rem;
   line-height: 1.8;
+}
+main section.part5 {
+  padding: 0.56rem 1.25rem 3.13rem;
+  background-color: #F9F6F0;
+}
+main section.part5 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+main section.part5 .text p {
+  color: #772d08;
+  font-size: 1.2rem;
+}
+main section.part5 .text h2 {
+  font-weight: 100;
+  font-size: 1.8rem;
+}
+main section.part5 .text button {
+  padding: 11px;
+  border-radius: 19px;
+  border: none;
+  background-color: #772d08;
+  width: fit-content;
+  color: white;
+}
+main section.part5 .img img {
+  margin-top: 2rem;
+  width: 100%;
+  height: clamp(500px, 70vh, 600px);
+  border-radius: 20rem;
+  object-position: center center;
+  object-fit: cover;
+}
+main section.part5 .text-2 {
+  padding: 0.56rem 1.25rem 3.13rem;
+}
+main section.part5 .text-2 p {
+  line-height: 1.5;
+  color: gray;
+  margin-bottom: 2rem;
+}
+main section.part5 .text-2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 @media (max-width: 600px) {
