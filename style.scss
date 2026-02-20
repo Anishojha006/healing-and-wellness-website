@@ -39,6 +39,12 @@ main {
     justify-content: space-between;
     padding: 0.6rem;
     background-color: #f9f6f0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    margin-top: 0.1rem;
+    
+  
 
     .hamburger {
       height: clamp(24px, 6vw, 100px);
@@ -51,6 +57,7 @@ main {
     border: 0.1px solid #f4ecec;
     border-radius: 0.9375rem;
     padding-left: 1rem;
+      padding-top: 3rem;
 
     .textandbtn {
       h3 {
