@@ -347,7 +347,7 @@ main {
   }
 
   section.part4 {
-    padding: 80px 20px 50px;
+    padding: 80px 13px 50px;
 
     .img {
       border-radius: 0.6rem;
@@ -379,8 +379,10 @@ main {
         @include flex(row,0.5rem);
         margin-top: 2rem;
         flex-wrap: wrap;
+        justify-content: center;
+    align-items: center;
         .card {
-          width:170px;
+          width: 173px;
           h4{
             font-weight: 100;
           }

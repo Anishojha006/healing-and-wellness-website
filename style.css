@@ -279,7 +279,7 @@ main section.part3 .services .serviceSection .img2 > img {
   border-radius: 0.5rem;
 }
 main section.part4 {
-  padding: 80px 20px 50px;
+  padding: 80px 13px 50px;
 }
 main section.part4 .img {
   border-radius: 0.6rem;
@@ -310,9 +310,11 @@ main section.part4 .text .cards {
   gap: 0.5rem;
   margin-top: 2rem;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 main section.part4 .text .cards .card {
-  width: 170px;
+  width: 173px;
 }
 main section.part4 .text .cards .card h4 {
   font-weight: 100;
