@@ -38,6 +38,9 @@ main nav {
 main nav .hamburger {
   height: clamp(24px, 6vw, 100px);
 }
+main nav .hamburger:active {
+  scale: 0.8;
+}
 main section.part1 {
   height: min-content;
   width: 100%;
@@ -87,6 +90,9 @@ main section.part1 .textandbtn .proposal-btn .btn-text {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1rem;
+}
+main section.part1 .textandbtn .proposal-btn:active {
+  scale: 0.95;
 }
 main section.part1 .textandbtn p {
   padding-top: 1rem;

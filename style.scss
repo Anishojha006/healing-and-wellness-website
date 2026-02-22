@@ -47,6 +47,9 @@ main {
     .hamburger {
       height: clamp(24px, 6vw, 100px);
     }
+    .hamburger:active {
+      scale: 0.80;
+    }
   }
 
   section.part1 {
@@ -109,6 +112,9 @@ main {
           font-weight: 600;
           font-size: 1rem;
         }
+      }
+      .proposal-btn:active{
+        scale: 0.95;
       }
 
       p {
