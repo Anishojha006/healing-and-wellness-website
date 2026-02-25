@@ -596,6 +596,20 @@ main section.part9 .staff_conatiner .staff .social_media_links {
   align-items: center;
   font-size: 1.5rem;
 }
+main section.part10 {
+  padding: 0.56rem 1.25rem 3.13rem;
+  background-color: #F9F6F0;
+}
+main section.part10 .text {
+  line-height: 2.5rem;
+}
+main section.part10 .text p {
+  color: brown;
+}
+main section.part10 .text h2 {
+  font-weight: 100;
+  font-size: 2rem;
+}
 
 @media (max-width: 600px) {
   .stats-container {

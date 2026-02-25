@@ -710,6 +710,20 @@ main {
       }
     }
   }
+  section.part10{
+        padding: 0.56rem 1.25rem 3.13rem;
+        background-color: #F9F6F0;
+        .text{
+          line-height: 2.5rem;
+          p{
+          color: brown;
+        }
+        h2{
+          font-weight: 100;
+          font-size: 2rem;
+        }
+        }
+  }
 }
 
 @media (max-width: 600px) {
