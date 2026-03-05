@@ -856,7 +856,7 @@ main {
 
       input,
       textarea {
-        padding: 1px;
+        padding: 4px;
         border-radius: 10px;
         border: 1px solid $border-color;
         font-size: 14px;
@@ -889,7 +889,7 @@ main {
       }
     }
     #lastName{
-    width: 2rem;
+    width: 10rem;
     }
     
   }
@@ -923,7 +923,12 @@ main {
  }
   
 }
- footer{
+ 
+  }
+ 
+}
+footer{
+  padding: 1rem;
   box-sizing: border-box;
     margin-top: 1rem;
     background-color: #F9F6F0;
@@ -967,9 +972,6 @@ main {
 }
    
   }
-  }
- 
-}
 
 @media (max-width: 600px) {
   .stats-container {
