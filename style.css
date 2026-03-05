@@ -793,6 +793,7 @@ main section.part12 .contact-info .inner .address {
 main footer {
   box-sizing: border-box;
   margin-top: 1rem;
+  width: 100%;
   background-color: #F9F6F0;
 }
 main footer .img {
