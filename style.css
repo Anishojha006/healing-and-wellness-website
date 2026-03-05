@@ -790,40 +790,39 @@ main section.part12 .contact-info .inner .address {
   flex-direction: column;
   gap: 1rem;
 }
-main footer {
+main section.part12 footer {
   box-sizing: border-box;
   margin-top: 1rem;
-  width: 100%;
   background-color: #F9F6F0;
 }
-main footer .img {
+main section.part12 footer .img {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-main footer .box {
+main section.part12 footer .box {
   margin-bottom: 3rem;
 }
-main footer .box .top h4 {
+main section.part12 footer .box .top h4 {
   color: rgb(119, 45, 8);
   font-weight: 600;
   margin-bottom: 1rem;
 }
-main footer .box .side {
+main section.part12 footer .box .side {
   display: flex;
   flex-direction: row;
   gap: 2rem;
   margin-top: 1rem;
 }
-main footer .box .side .column {
+main section.part12 footer .box .side .column {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-main footer .box .side .column a {
+main section.part12 footer .box .side .column a {
   text-decoration: none;
   color: rgb(38, 14, 1);
 }
-main footer .copyright {
+main section.part12 footer .copyright {
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
@@ -831,7 +830,7 @@ main footer .copyright {
   justify-content: center;
   align-items: center;
 }
-main footer .copyright .icon ul {
+main section.part12 footer .copyright .icon ul {
   display: flex;
   flex-direction: row;
   gap: 1rem;
