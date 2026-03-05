@@ -12,6 +12,9 @@ html {
   width: 100%;
   height: 100%;
 }
+body{
+  overflow: hidden;
+}
 .line{
   width: 100%;
   height: 0.1rem;
@@ -923,7 +926,6 @@ main {
       margin-bottom: 3rem;
     }
     .box{
-      padding: 1rem;
       margin-bottom: 3rem;
       .top{
         h4{
