@@ -774,6 +774,60 @@ main {
       }
     }
   }
+  section.part11{
+    padding: 0.56rem 1.25rem 3.13rem;
+    color: black;
+    background-color:#f9f6f0;
+    @include flex(column,2rem);
+    .text{
+      
+    h2{
+      font-weight:100;
+      font-size: 1.8rem;
+      white-space: nowrap;
+    }
+    margin-bottom: 1rem;
+    }
+    .questionpart{
+      @include flex(column,1rem);
+      .question{
+      border-radius: 1rem;
+      padding: 1rem;
+      @include flex(row,0rem);
+      justify-content: space-between;
+      background-color: #FAE6BE;
+      h6{
+        font-weight: 500;
+        font-size: 1rem;
+        color:rgb(119, 45, 8);
+      }
+    }
+    }
+    
+  }
+  section.part12{
+  padding: 0.56rem 1.25rem 3.13rem;
+  .contact-us{
+    @include flex(row,1rem);
+    flex-wrap: wrap;
+    .input{
+    @include flex(column,0rem);
+    flex: 1 0 0;
+    label{
+      flex-grow: 1;
+    }
+    input{
+      flex-grow: 1;
+          padding: 0.3rem;
+          border-radius: 0.3rem;
+    }
+    }
+    .input:nth-child(4){
+       
+    }
+    
+  }
+  }
 }
 
 @media (max-width: 600px) {
