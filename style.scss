@@ -80,7 +80,7 @@ main {
         font-weight: 200;
         font-family: sans-serif;
       }
-
+    
       // Variables
       $brand-brown: #772d08;
       $white: #ffffff;
@@ -828,12 +828,13 @@ main {
     margin-bottom: 20px;
     color: $text-color;
   }
-
+  
   .contact-form {
+
     display: flex;
     flex-direction: column;
     gap: 18px;
-
+  
     .row {
       display: flex;
       gap: 15px;
@@ -887,8 +888,13 @@ main {
         opacity: 0.9;
       }
     }
+    #lastName{
+    width: 2rem;
+    }
+    
   }
 }
+
 .contact-info{
   margin-top: 1rem;
   overflow: hidden;

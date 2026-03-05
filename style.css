@@ -768,6 +768,9 @@ main section.part12 .form-container .contact-form button {
 main section.part12 .form-container .contact-form button:hover {
   opacity: 0.9;
 }
+main section.part12 .form-container .contact-form #lastName {
+  width: 2rem;
+}
 main section.part12 .contact-info {
   margin-top: 1rem;
   overflow: hidden;
