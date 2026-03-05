@@ -735,7 +735,7 @@ main section.part12 .form-container .contact-form .input-group label {
 }
 main section.part12 .form-container .contact-form .input-group input,
 main section.part12 .form-container .contact-form .input-group textarea {
-  padding: 4px;
+  padding: 1px;
   border-radius: 10px;
   border: 1px solid rgba(38, 14, 1, 0.2);
   font-size: 14px;
