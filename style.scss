@@ -68,6 +68,9 @@ main {
     border-radius: 0.9375rem;
     padding-left: 1rem;
     padding-top: 3rem;
+    @include flex(column,0rem);
+    justify-content: center;
+    text-align: center;
 
     .textandbtn {
       h3 {
