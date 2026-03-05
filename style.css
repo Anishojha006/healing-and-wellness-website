@@ -791,7 +791,7 @@ main section.part12 .contact-info .inner .address {
   gap: 1rem;
 }
 main footer {
-  padding: 1rem;
+  box-sizing: border-box;
   margin-top: 1rem;
   background-color: #F9F6F0;
 }
