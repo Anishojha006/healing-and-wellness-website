@@ -696,27 +696,100 @@ main section.part11 .questionpart .question h6 {
 }
 main section.part12 {
   padding: 0.56rem 1.25rem 3.13rem;
+  background-color: white;
 }
-main section.part12 .contact-us {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  flex-wrap: wrap;
+main section.part12 .form-container {
+  max-width: 600px;
+  margin: auto;
 }
-main section.part12 .contact-us .input {
+main section.part12 .form-container h2 {
+  margin-bottom: 20px;
+  color: rgb(38, 14, 1);
+}
+main section.part12 .form-container .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 0rem;
-  flex: 1 0 0;
+  gap: 18px;
 }
-main section.part12 .contact-us .input label {
-  flex-grow: 1;
+main section.part12 .form-container .contact-form .row {
+  display: flex;
+  gap: 15px;
 }
-main section.part12 .contact-us .input input {
-  flex-grow: 1;
-  padding: 0.3rem;
-  border-radius: 0.3rem;
+main section.part12 .form-container .contact-form .row .input-group {
+  flex: 1;
 }
+main section.part12 .form-container .contact-form .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+main section.part12 .form-container .contact-form .input-group label {
+  font-size: 14px;
+  color: rgb(38, 14, 1);
+}
+main section.part12 .form-container .contact-form .input-group input,
+main section.part12 .form-container .contact-form .input-group textarea {
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid rgba(38, 14, 1, 0.2);
+  font-size: 14px;
+  outline: none;
+}
+main section.part12 .form-container .contact-form .input-group input:focus,
+main section.part12 .form-container .contact-form .input-group textarea:focus {
+  border-color: rgb(119, 45, 8);
+}
+main section.part12 .form-container .contact-form .input-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+main section.part12 .form-container .contact-form button {
+  margin-top: 10px;
+  padding: 14px;
+  border: none;
+  border-radius: 80px;
+  background: rgb(119, 45, 8);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+main section.part12 .form-container .contact-form button:hover {
+  opacity: 0.9;
+}
+main section.part12 .contact-info {
+  margin-top: 1rem;
+  overflow: hidden;
+  margin-top: 1rem;
+  border-radius: 0.65rem;
+}
+main section.part12 .contact-info .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: rgb(249, 246, 240);
+}
+main section.part12 .contact-info .inner .text p {
+  color: rgb(119, 45, 8);
+  font-weight: 600;
+}
+main section.part12 .contact-info .inner .text h3 {
+  font-weight: 600;
+  color: rgb(38, 14, 1);
+  margin-top: 1.5rem;
+}
+main section.part12 .contact-info .inner .line {
+  width: 100%;
+  background-color: gray;
+  height: 0.1rem;
+}
+main section.part12 .contact-info .inner .address {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 @media (max-width: 600px) {
   .stats-container {
     flex-direction: column;

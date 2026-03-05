@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: Satoshi, "Satoshi Placeholder", sans-serif;
 }
-
+$primary-color: rgb(119, 45, 8);
+$text-color: rgb(38, 14, 1);
+$border-color: rgba(38, 14, 1, 0.2);
 body,
 html {
   width: 100%;
@@ -807,26 +809,109 @@ main {
   }
   section.part12{
   padding: 0.56rem 1.25rem 3.13rem;
-  .contact-us{
-    @include flex(row,1rem);
-    flex-wrap: wrap;
-    .input{
-    @include flex(column,0rem);
-    flex: 1 0 0;
-    label{
-      flex-grow: 1;
-    }
-    input{
-      flex-grow: 1;
-          padding: 0.3rem;
-          border-radius: 0.3rem;
-    }
-    }
-    .input:nth-child(4){
-       
-    }
-    
+  background-color: white;
+
+.form-container {
+  max-width: 600px;
+  margin: auto;
+
+  h2 {
+    margin-bottom: 20px;
+    color: $text-color;
   }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    .row {
+      display: flex;
+      gap: 15px;
+
+      .input-group {
+        flex: 1;
+      }
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
+      label {
+        font-size: 14px;
+        color: $text-color;
+      }
+
+      input,
+      textarea {
+        padding: 4px;
+        border-radius: 10px;
+        border: 1px solid $border-color;
+        font-size: 14px;
+        outline: none;
+
+        &:focus {
+          border-color: $primary-color;
+        }
+      }
+
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 14px;
+      border: none;
+      border-radius: 80px;
+      background: $primary-color;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+.contact-info{
+  margin-top: 1rem;
+  overflow: hidden;
+  margin-top: 1rem;
+  border-radius: 0.65rem;
+  .inner{
+   @include flex(column,2rem);
+  padding: 1rem;
+   background-color: rgb(249, 246, 240);
+  .text{
+    p{
+    color: rgb(119, 45, 8);
+    font-weight: 600;
+   }
+   h3{
+    font-weight:600;
+  color: rgb(38, 14, 1);
+  margin-top: 1.5rem;
+   }   
+  }
+
+    .line{
+      width: 100%;
+      background-color: gray;
+      height: 0.1rem;
+    }
+    .address{
+      @include flex(column, 1rem);
+    }
+ }
+  
+}
   }
 }
 
