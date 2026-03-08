@@ -706,7 +706,7 @@ main section.part11 .questionpart .question h6 {
   color: rgb(119, 45, 8);
 }
 main section.part12 {
-  padding: 0.56rem 1.25rem 3.13rem;
+  padding: 0.56rem 0.5rem 3.13rem;
   background-color: white;
 }
 main section.part12 .form-container {
@@ -769,7 +769,7 @@ main section.part12 .form-container .contact-form button:hover {
   opacity: 0.9;
 }
 main section.part12 .form-container .contact-form #lastName {
-  width: 4rem;
+  width: 10rem;
 }
 main section.part12 .contact-info {
   margin-top: 1rem;
