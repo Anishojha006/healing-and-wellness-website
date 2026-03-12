@@ -994,6 +994,7 @@ footer{
     justify-content: flex-start;
     gap: 5rem;
     nav{
+      margin-top: 1rem;
       height: 3.6rem;
       border-radius: 1rem;
       justify-content: center;
@@ -1006,9 +1007,31 @@ footer{
       background-color: white;
       border: none;
       margin-top: 5rem;
-      width: 90%;
+      padding: 3rem;
+     width: 80%;
     flex-direction: row;
     height: 100%;
+    
+    .textandbtn{
+      @include flex(column,1rem);
+      width: 60%;
+      h3{
+        font-size: 60px;
+    width: 60%;
+    text-align:left;
+      }
+      p{
+        margin-right: 24rem;
+        white-space: nowrap;
+        margin-top: 5rem;
+      }
+      a{
+        margin-right: 27rem;
+      }
+      .btn-text{
+        white-space: nowrap;
+      }
+    }
      .image-wrapper{
       img{
          height: 33rem;
