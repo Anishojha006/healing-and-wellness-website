@@ -704,7 +704,7 @@ main section.part11 .questionpart .question {
   flex-direction: row;
   gap: 0rem;
   justify-content: space-between;
-  background-color: #FAE6BE;
+  background-color: #fae6be;
 }
 main section.part11 .questionpart .question h6 {
   font-weight: 500;
@@ -809,7 +809,7 @@ footer {
   padding: 1rem;
   box-sizing: border-box;
   margin-top: 1rem;
-  background-color: #F9F6F0;
+  background-color: #f9f6f0;
 }
 footer .img {
   margin-top: 3rem;
@@ -861,7 +861,7 @@ footer .copyright .icon ul {
 }
 @media (min-width: 900px) {
   main {
-    background-color: #F9F6F0;
+    background-color: #f9f6f0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -884,7 +884,7 @@ footer .copyright .icon ul {
     background-color: white;
     border: none;
     margin-top: 5rem;
-    padding: 3rem;
+    padding: 2rem;
     width: 80%;
     flex-direction: row;
     height: 100%;
@@ -893,7 +893,14 @@ footer .copyright .icon ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 60%;
+    width: 54%;
+  }
+  main section.part1 .textandbtn .proposal-btn .icon-circle {
+    width: 20px;
+    height: 20px;
+  }
+  main section.part1 .textandbtn .proposal-btn .btn-text {
+    font-size: 14px;
   }
   main section.part1 .textandbtn h3 {
     font-size: 60px;
