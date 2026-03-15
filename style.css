@@ -921,4 +921,16 @@ footer .copyright .icon ul {
   main section.part1 .image-wrapper img {
     height: 33rem;
   }
+  main section.part2 .video {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  main section.part2 .video video {
+    width: 46%;
+  }
 }/*# sourceMappingURL=style.css.map */

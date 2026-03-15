@@ -1037,5 +1037,17 @@ footer {
         }
       }
     }
+    section.part2{
+      .video{
+        @include flex(row, 0);
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        border-radius: 50%;
+        video{
+          width: 46%;
+        }
+      }
+    }
   }
 }
